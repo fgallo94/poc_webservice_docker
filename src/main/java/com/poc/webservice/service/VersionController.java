@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class VersionController {
 
-    private static final String VERSION = "0.0.1";
+    private static final String VERSION = "1.0.0";
 
     @GetMapping("/version")
     public ResponseEntity showVersion() {
