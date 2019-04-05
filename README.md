@@ -6,7 +6,7 @@
 - docker installed
 
 ## Installation 
-- $ docker run -p 8090:8090 --name poc_webservice_docker -d fgallo94/poc_webservice_docker:latest
+- $ docker run -p 8080:8080 --name poc_webservice_docker -d fgallo94/poc_webservice_docker:latest
 
 ## End-points
 End-point | Description
