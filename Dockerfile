@@ -1,5 +1,10 @@
-FROM openjdk:8-jdk-alpine
-VOLUME /tmp
-ADD target/webservice-0.0.1.jar target/app.jar
-RUN bash -c 'touch target/app.jar'
-ENTRYPOINT ["java","-jar","-Dspring.profiles.active=local","target/app.jar"]
+
+FROM java:8-jdk-alpine
+
+COPY ./target/webservice-0.0.1.jar /usr/app/
+
+WORKDIR /usr/app
+
+RUN sh -c 'touch webservice-0.0.1.jar'
+
+ENTRYPOINT ["java","-jar","webservice-0.0.1.jar"]
