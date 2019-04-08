@@ -49,11 +49,11 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>1.1.1</version>
                 <configuration>
-                    <imageName>example</imageName>
-                    <dockerDirectory>.</dockerDirectory>
+                    <imageName>fgallo94/poc_webservice_docker</imageName>
+                    <dockerDirectory>/</dockerDirectory>
                     <resources>
                         <resource>
-                            <targetPath>/</targetPath>
+                            <targetPath>./target</targetPath>
                             <directory>${project.build.directory}</directory>
                             <include>${project.build.finalName}.jar</include>
                         </resource>
